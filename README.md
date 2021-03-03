@@ -1,7 +1,4 @@
-<table bgcolor="#FFFFFF" width="100%" cellspacing="0" cellpadding="5" border="0">
-		<tr>
-			<td bgcolor="#6699cc">
-				<img src="images/filler.png" alt="Flak 1.0 - Ultra-fast Fuzzy Whole-genome Alignment" width="800" height="40" border="0">
-			</td>
-		</tr>
-</table>
+<img src="images/logo.png" alt="Flak 1.0 - Ultra-fast Fuzzy Whole-genome Alignment" width="800" height="100" border="0"/>
+
+<h1>Overview</h1>
+FLAK (Fuzzy Logic Analysis of k-mers) is a software system designed to perform a fast approximate whole-genome comparison of two DNA sequences and enable fuzzy operations to be performed on a finished alignment in a visual and intuitive way. In contrast with existing genome alignment systems that are based on exact-matching suffix tree data structures or provide approximations using the BLAST-like seed-and-extend model, FLAK has a built-in native mechanism for approximate sequence matching. The kernel of the FLAK system is an optimised fuzzy hash map that enables a genome to be searched in average O(1) running time. FLAK is written in Java and uses a 2-bit encoding mechanism to represent and compress each 32-mer substring of a genome into a single 64-bit (8 byte) primitive type. The representation of DNA sequence information as a bit vector greatly reduces the space complexity of the system and enables FLAK to scale from small prokaryotic genomes (<5Mbps) to large mammalian chromosomes or genomes (>3 Gbps). Moreover, the exploitation of bit vectors using low-level binary shift operations further reduces the time complexity of genome alignment.
